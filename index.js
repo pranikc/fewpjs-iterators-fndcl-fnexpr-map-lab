@@ -13,11 +13,11 @@ const tutorials = [
 
 const titleCased = () => {
   // use the .map method on the tutorials to return a new array
-  return tutorials.map(function(title) {
-    const wordArray = title.split(" ")
-    for (let i = 0; i < wordArray.length; i++) {
-      wordArray[i] = wordArray[i][0].toUpperCase() + wordArray[i].substr(1)
+  return tutorials.map(function(string) {
+    const wordArr = string.split(" ")
+    for (let i = 0; i < wordArr.length; i++) {
+      wordArr[i] = wordArr[i][0].toUpperCase() + wordArr[i].substr(1)
     }
-    return title = wordArray.join(" ")
+    return wordArr.join(" ")
   })
 }
